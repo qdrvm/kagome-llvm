@@ -1,6 +1,6 @@
 # See docs/CMake.html for instructions about how to build LLVM with CMake.
 
-cmake_minimum_required(VERSION 2.8.8)
+cmake_minimum_required(VERSION 3.0) # For Hunter
 
 # FIXME: It may be removed when we use 2.8.12.
 if(CMAKE_VERSION VERSION_LESS 2.8.12)
@@ -21,6 +21,12 @@ if(CMAKE_VERSION VERSION_LESS 3.1.20141117)
 else()
   set(cmake_3_2_USES_TERMINAL USES_TERMINAL)
 endif()
+
+include("cmake/HunterGate.cmake")
+HunterGate(
+    URL "https://github.com/ruslo/hunter/archive/v0.18.48.tar.gz"
+    SHA1 "71ec0afd26f7df84daa1e3e7d0da4d42f6072504"
+)
 
 project(LLVM)
 

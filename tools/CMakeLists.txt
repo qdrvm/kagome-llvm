@@ -71,6 +71,17 @@ endif()
 
 add_llvm_tool_subdirectory(gold)
 
+if(HUNTER_ENABLED)
+  hunter_add_package(Clang) # CLANG_ROOT
+  set(
+     LLVM_EXTERNAL_CLANG_SOURCE_DIR
+     "${CLANG_ROOT}"
+     CACHE
+     PATH
+     "Path to Clang"
+     FORCE
+  )
+endif()
 add_llvm_external_project(clang)
 add_llvm_external_project(llgo)
 
