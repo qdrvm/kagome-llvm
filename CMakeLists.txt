@@ -32,6 +32,12 @@ if(NOT DEFINED LLVM_VERSION_SUFFIX)
   set(LLVM_VERSION_SUFFIX "")
 endif()
 
+include("cmake/HunterGate.cmake")
+HunterGate(
+    URL "https://github.com/ruslo/hunter/archive/v0.18.48.tar.gz"
+    SHA1 "71ec0afd26f7df84daa1e3e7d0da4d42f6072504"
+)
+
 if (POLICY CMP0048)
   cmake_policy(SET CMP0048 NEW)
   set(cmake_3_0_PROJ_VERSION
