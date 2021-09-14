@@ -19,8 +19,8 @@ endif()
 
 include("cmake/HunterGate.cmake")
 HunterGate(
-    URL "https://github.com/cpp-pm/hunter/archive/v0.23.314.tar.gz"
-    SHA1 "95c47c92f68edb091b5d6d18924baabe02a6962a"
+    URL "https://github.com/sanblch/hunter/archive/v0.23.315.tar.gz"
+    SHA1 "552fb68b234d8143e797d3efc8c31d0aef231058"
 )
 
 if (NOT PACKAGE_VERSION)
