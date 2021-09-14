@@ -17,6 +17,12 @@ if(NOT DEFINED LLVM_VERSION_SUFFIX)
   set(LLVM_VERSION_SUFFIX "")
 endif()
 
+include("cmake/HunterGate.cmake")
+HunterGate(
+    URL "https://github.com/cpp-pm/hunter/archive/v0.23.314.tar.gz"
+    SHA1 "95c47c92f68edb091b5d6d18924baabe02a6962a"
+)
+
 if (NOT PACKAGE_VERSION)
   set(PACKAGE_VERSION
     "${LLVM_VERSION_MAJOR}.${LLVM_VERSION_MINOR}.${LLVM_VERSION_PATCH}${LLVM_VERSION_SUFFIX}")
