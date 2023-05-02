@@ -324,19 +324,28 @@ void RuntimeDyldMachOCRTPBase<Impl>::registerEHFrames() {
       continue;
     SectionEntry *Text = &Sections[SectionInfo.TextSID];
     SectionEntry *EHFrame = &Sections[SectionInfo.EHFrameSID];
-    SectionEntry *ExceptTab = nullptr;
-    if (SectionInfo.ExceptTabSID != RTDYLD_INVALID_SECTION_ID)
-      ExceptTab = &Sections[SectionInfo.ExceptTabSID];
 
-    int64_t DeltaForText = computeDelta(Text, EHFrame);
-    int64_t DeltaForEH = 0;
-    if (ExceptTab)
-      DeltaForEH = computeDelta(ExceptTab, EHFrame);
+    // AArch64:
+    //   Each unrelocated FDE points to start of "__eh_frame" section.
+    //   Each FDE has two relocations:
+    //     - ARM64_RELOC_SUBTRACTOR substracts start of mapped "__eh_frame" section.
+    //     - ARM64_RELOC_UNSIGNED adds start of mapped function code.
+    constexpr bool AlreadyRelocated = std::is_same<Impl, RuntimeDyldMachOAArch64>::value;
+    if (not AlreadyRelocated) {
+      SectionEntry *ExceptTab = nullptr;
+      if (SectionInfo.ExceptTabSID != RTDYLD_INVALID_SECTION_ID)
+        ExceptTab = &Sections[SectionInfo.ExceptTabSID];
 
-    uint8_t *P = EHFrame->getAddress();
-    uint8_t *End = P + EHFrame->getSize();
-    while (P != End) {
-      P = processFDE(P, DeltaForText, DeltaForEH);
+      int64_t DeltaForText = computeDelta(Text, EHFrame);
+      int64_t DeltaForEH = 0;
+      if (ExceptTab)
+        DeltaForEH = computeDelta(ExceptTab, EHFrame);
+
+      uint8_t *P = EHFrame->getAddress();
+      uint8_t *End = P + EHFrame->getSize();
+      while (P != End) {
+        P = processFDE(P, DeltaForText, DeltaForEH);
+      }
     }
 
     MemMgr.registerEHFrames(EHFrame->getAddress(), EHFrame->getLoadAddress(),
