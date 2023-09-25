@@ -1,0 +1,60 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library",
+			"add_llvm_component_library"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/lib/WindowsManifest/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 7,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 823,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 875,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "LLVMWindowsManifest",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"llvm/lib/libLLVMWindowsManifest.a"
+			],
+			"targetId" : "LLVMWindowsManifest::@e2085889d97c6e1d7318",
+			"targetIndex" : 274,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "llvm/lib/WindowsManifest",
+		"source" : "llvm/lib/WindowsManifest"
+	}
+}

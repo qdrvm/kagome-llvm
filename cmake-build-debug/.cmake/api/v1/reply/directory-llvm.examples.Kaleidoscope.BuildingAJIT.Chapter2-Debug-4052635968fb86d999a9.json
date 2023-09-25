@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "llvm/examples/Kaleidoscope/BuildingAJIT/Chapter2",
+		"source" : "llvm/examples/Kaleidoscope/BuildingAJIT/Chapter2"
+	}
+}

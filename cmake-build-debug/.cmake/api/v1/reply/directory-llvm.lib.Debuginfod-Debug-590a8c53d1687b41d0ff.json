@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/lib/Debuginfod/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 875,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "LLVMDebuginfod",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"llvm/lib/libLLVMDebuginfod.a"
+			],
+			"targetId" : "LLVMDebuginfod::@7f9b748778f5ec182265",
+			"targetIndex" : 146,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "llvm/lib/Debuginfod",
+		"source" : "llvm/lib/Debuginfod"
+	}
+}

@@ -1,0 +1,284 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_dependencies",
+			"add_kaleidoscope_chapter"
+		],
+		"files" : 
+		[
+			"llvm/examples/Kaleidoscope/CMakeLists.txt",
+			"llvm/examples/Kaleidoscope/BuildingAJIT/Chapter1/CMakeLists.txt",
+			"llvm/examples/Kaleidoscope/BuildingAJIT/Chapter2/CMakeLists.txt",
+			"llvm/examples/Kaleidoscope/BuildingAJIT/Chapter3/CMakeLists.txt",
+			"llvm/examples/Kaleidoscope/BuildingAJIT/Chapter4/CMakeLists.txt",
+			"llvm/examples/Kaleidoscope/Chapter2/CMakeLists.txt",
+			"llvm/examples/Kaleidoscope/Chapter3/CMakeLists.txt",
+			"llvm/examples/Kaleidoscope/Chapter4/CMakeLists.txt",
+			"llvm/examples/Kaleidoscope/Chapter5/CMakeLists.txt",
+			"llvm/examples/Kaleidoscope/Chapter6/CMakeLists.txt",
+			"llvm/examples/Kaleidoscope/Chapter7/CMakeLists.txt",
+			"llvm/examples/Kaleidoscope/Chapter8/CMakeLists.txt",
+			"llvm/examples/Kaleidoscope/Chapter9/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 3
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 14,
+				"parent" : 5
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 6
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 15,
+				"parent" : 8
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 9
+			},
+			{
+				"file" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 4,
+				"line" : 15,
+				"parent" : 11
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 12
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 2,
+				"file" : 5,
+				"line" : 5,
+				"parent" : 14
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 15
+			},
+			{
+				"file" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 6,
+				"line" : 6,
+				"parent" : 17
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 18
+			},
+			{
+				"file" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 7,
+				"line" : 14,
+				"parent" : 20
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 21
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 2,
+				"file" : 8,
+				"line" : 14,
+				"parent" : 23
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 24
+			},
+			{
+				"file" : 9
+			},
+			{
+				"command" : 2,
+				"file" : 9,
+				"line" : 14,
+				"parent" : 26
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 27
+			},
+			{
+				"file" : 10
+			},
+			{
+				"command" : 2,
+				"file" : 10,
+				"line" : 15,
+				"parent" : 29
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 30
+			},
+			{
+				"file" : 11
+			},
+			{
+				"command" : 2,
+				"file" : 11,
+				"line" : 5,
+				"parent" : 32
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 33
+			},
+			{
+				"file" : 12
+			},
+			{
+				"command" : 2,
+				"file" : 12,
+				"line" : 11,
+				"parent" : 35
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 36
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "BuildingAJIT-Ch1::@391d9d52f141cbdf4ac2"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "BuildingAJIT-Ch2::@d5efaaae3db1f517ee20"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "BuildingAJIT-Ch3::@8e344477473860b033eb"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "BuildingAJIT-Ch4::@406d28daabfdada141f8"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "Kaleidoscope-Ch2::@343a09d35a7ef9a63776"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "Kaleidoscope-Ch3::@5e30d47d288f2880ece9"
+		},
+		{
+			"backtrace" : 22,
+			"id" : "Kaleidoscope-Ch4::@3edb5de8565b1c5b199d"
+		},
+		{
+			"backtrace" : 25,
+			"id" : "Kaleidoscope-Ch5::@a9a7bcd75cb31c2f5476"
+		},
+		{
+			"backtrace" : 28,
+			"id" : "Kaleidoscope-Ch6::@2eabe86e80c197b5647d"
+		},
+		{
+			"backtrace" : 31,
+			"id" : "Kaleidoscope-Ch7::@57673d0e82d56338ed9c"
+		},
+		{
+			"backtrace" : 34,
+			"id" : "Kaleidoscope-Ch8::@3906e6ad8f3f36f73338"
+		},
+		{
+			"backtrace" : 37,
+			"id" : "Kaleidoscope-Ch9::@0a80647b0ba52d9dfd2e"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Examples"
+	},
+	"id" : "Kaleidoscope::@69c6782afb54a07e79a8",
+	"name" : "Kaleidoscope",
+	"paths" : 
+	{
+		"build" : "llvm/examples/Kaleidoscope",
+		"source" : "llvm/examples/Kaleidoscope"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/tools/llvm-exegesis/lib/X86/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 875,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "LLVMExegesisX86",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"llvm/lib/libLLVMExegesisX86.a"
+			],
+			"targetId" : "LLVMExegesisX86::@cb3fc7df1ee540a48cdc",
+			"targetIndex" : 156,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "llvm/tools/llvm-exegesis/lib/X86",
+		"source" : "llvm/tools/llvm-exegesis/lib/X86"
+	}
+}

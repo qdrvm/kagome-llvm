@@ -1,0 +1,43 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_llvm_component_group"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/lib/Target/AArch64/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 799,
+				"parent" : 1
+			}
+		]
+	},
+	"id" : "AArch64::@7cb8c702a8b29891ae71",
+	"name" : "AArch64",
+	"paths" : 
+	{
+		"build" : "llvm/lib/Target/AArch64",
+		"source" : "llvm/lib/Target/AArch64"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

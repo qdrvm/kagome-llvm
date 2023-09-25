@@ -1,0 +1,60 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library",
+			"add_llvm_component_library"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/lib/Transforms/InstCombine/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 823,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 875,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "LLVMInstCombine",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"llvm/lib/libLLVMInstCombine.a"
+			],
+			"targetId" : "LLVMInstCombine::@7e53d04c92de703cf897",
+			"targetIndex" : 175,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "llvm/lib/Transforms/InstCombine",
+		"source" : "llvm/lib/Transforms/InstCombine"
+	}
+}

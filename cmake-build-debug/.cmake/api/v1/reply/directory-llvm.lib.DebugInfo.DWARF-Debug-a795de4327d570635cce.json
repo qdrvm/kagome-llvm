@@ -1,0 +1,60 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library",
+			"add_llvm_component_library"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/lib/DebugInfo/DWARF/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 823,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 875,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "LLVMDebugInfoDWARF",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"llvm/lib/libLLVMDebugInfoDWARF.a"
+			],
+			"targetId" : "LLVMDebugInfoDWARF::@0c7efda7aa48606ce792",
+			"targetIndex" : 141,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "llvm/lib/DebugInfo/DWARF",
+		"source" : "llvm/lib/DebugInfo/DWARF"
+	}
+}

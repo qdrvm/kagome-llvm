@@ -1,0 +1,60 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library",
+			"add_llvm_component_library"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/lib/IRPrinter/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 823,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 875,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "LLVMIRPrinter",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"llvm/lib/libLLVMIRPrinter.a"
+			],
+			"targetId" : "LLVMIRPrinter::@8fb0f767983f75b26761",
+			"targetIndex" : 173,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "llvm/lib/IRPrinter",
+		"source" : "llvm/lib/IRPrinter"
+	}
+}

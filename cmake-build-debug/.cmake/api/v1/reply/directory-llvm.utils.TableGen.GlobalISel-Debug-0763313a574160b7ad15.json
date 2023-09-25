@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/utils/TableGen/GlobalISel/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 875,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "LLVMTableGenGlobalISel",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"llvm/lib/libLLVMTableGenGlobalISel.a"
+			],
+			"targetId" : "LLVMTableGenGlobalISel::@ca61cef13f275a8a5c66",
+			"targetIndex" : 254,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "llvm/utils/TableGen/GlobalISel",
+		"source" : "llvm/utils/TableGen/GlobalISel"
+	}
+}

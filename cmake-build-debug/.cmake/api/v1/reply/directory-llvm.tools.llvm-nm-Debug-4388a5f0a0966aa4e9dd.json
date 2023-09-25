@@ -1,0 +1,60 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"llvm_add_tool",
+			"add_llvm_tool"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/tools/llvm-nm/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1357,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1337,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "llvm-nm",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"llvm/bin/llvm-nm"
+			],
+			"targetId" : "llvm-nm::@bc3c6112d83d0ae5d249",
+			"targetIndex" : 2021,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "llvm/tools/llvm-nm",
+		"source" : "llvm/tools/llvm-nm"
+	}
+}

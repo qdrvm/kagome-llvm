@@ -1,0 +1,60 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library",
+			"add_llvm_component_library"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/lib/DebugInfo/LogicalView/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 823,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 875,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "LLVMDebugInfoLogicalView",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"llvm/lib/libLLVMDebugInfoLogicalView.a"
+			],
+			"targetId" : "LLVMDebugInfoLogicalView::@eb59b514d9902ebe446f",
+			"targetIndex" : 143,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "llvm/lib/DebugInfo/LogicalView",
+		"source" : "llvm/lib/DebugInfo/LogicalView"
+	}
+}

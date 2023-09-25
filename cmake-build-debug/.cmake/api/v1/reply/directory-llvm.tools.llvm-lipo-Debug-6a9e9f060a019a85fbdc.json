@@ -1,0 +1,60 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"llvm_add_tool",
+			"add_llvm_tool"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/tools/llvm-lipo/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 1357,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1337,
+				"parent" : 2
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 3,
+			"component" : "llvm-lipo",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"llvm/bin/llvm-lipo"
+			],
+			"targetId" : "llvm-lipo::@743350b465bf3a1bbabf",
+			"targetIndex" : 2011,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "llvm/tools/llvm-lipo",
+		"source" : "llvm/tools/llvm-lipo"
+	}
+}

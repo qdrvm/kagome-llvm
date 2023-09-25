@@ -1,0 +1,391 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "llvm/lib/libLLVMDebuginfod.a"
+		}
+	],
+	"backtrace" : 3,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"llvm_add_library",
+			"add_llvm_library",
+			"install",
+			"target_link_libraries",
+			"set_property",
+			"llvm_update_compile_flags",
+			"add_compile_definitions",
+			"include",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/lib/Debuginfod/CMakeLists.txt",
+			"llvm/cmake/modules/HandleLLVMOptions.cmake",
+			"llvm/CMakeLists.txt",
+			"llvm/cmake/config-ix.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 848,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 588,
+				"parent" : 2
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 875,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 712,
+				"parent" : 2
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 612,
+				"parent" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 81,
+				"parent" : 6
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 883,
+				"parent" : 8
+			},
+			{
+				"file" : 2,
+				"parent" : 9
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 64,
+				"parent" : 10
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 848,
+				"parent" : 8
+			},
+			{
+				"file" : 4,
+				"parent" : 12
+			},
+			{
+				"command" : 7,
+				"file" : 4,
+				"line" : 338,
+				"parent" : 13
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 964,
+				"parent" : 10
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 965,
+				"parent" : 10
+			},
+			{
+				"command" : 7,
+				"file" : 2,
+				"line" : 966,
+				"parent" : 10
+			},
+			{
+				"command" : 9,
+				"file" : 3,
+				"line" : 1110,
+				"parent" : 8
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -g -std=c++17 -fdiagnostics-color=always"
+				},
+				{
+					"fragment" : " -fno-exceptions -fno-rtti"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "GTEST_HAS_RTTI=0"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_DEBUG"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 15,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "/home/di/Projects/kagome-llvm/cmake-build-debug/llvm/lib/Debuginfod"
+				},
+				{
+					"path" : "/home/di/Projects/kagome-llvm/llvm/lib/Debuginfod"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/di/Projects/kagome-llvm/cmake-build-debug/llvm/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/di/Projects/kagome-llvm/llvm/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					3
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "LLVMDemangle::@f654d0fb50ef5061f310"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMSupport::@5053ed32de7fb2c48a7b"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMCore::@42bf9b9a8ac35fa8f759"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMIRReader::@2e6a93a69ae3cfac1e26"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMBinaryFormat::@f0b090d43f463b60b38d"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMBitReader::@b4f7e71301ef9e899c2e"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMBitstreamReader::@9ab0ae86b33d81c60d50"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMMC::@e66659f572379e11e74a"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMMCParser::@86e25233705f6329f0ac"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMObject::@cb3bf53bf36b1e9fc4cf"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMRemarks::@7dfd32376a3688f7fb04"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMDebugInfoDWARF::@0c7efda7aa48606ce792"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMDebugInfoMSF::@63c6b5f6f3fe17585d63"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMDebugInfoCodeView::@6a98bbb55cebdd1fbae6"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMDebugInfoPDB::@98757380421d95336b14"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMSymbolize::@652bb3f17982f467403e"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMAsmParser::@924c7fff42d13d193ee5"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMTargetParser::@1a25f4f54dda206fe7e2"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "LLVMTextAPI::@3765edc5215c390c1cad"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Libraries"
+	},
+	"id" : "LLVMDebuginfod::@7f9b748778f5ec182265",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 4,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"name" : "LLVMDebuginfod",
+	"nameOnDisk" : "libLLVMDebuginfod.a",
+	"paths" : 
+	{
+		"build" : "llvm/lib/Debuginfod",
+		"source" : "llvm/lib/Debuginfod"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				4,
+				5,
+				6,
+				7
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Debuginfod/BuildIDFetcher.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Debuginfod/Debuginfod.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Debuginfod/HTTPClient.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Debuginfod/HTTPServer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 3,
+			"path" : "llvm/include/llvm/Debuginfod/BuildIDFetcher.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "llvm/include/llvm/Debuginfod/Debuginfod.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "llvm/include/llvm/Debuginfod/HTTPClient.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 3,
+			"path" : "llvm/include/llvm/Debuginfod/HTTPServer.h",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

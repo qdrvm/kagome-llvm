@@ -1,0 +1,53 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/tools/llvm-diff/lib/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 875,
+				"parent" : 1
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "LLVMDiff",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"llvm/lib/libLLVMDiff.a"
+			],
+			"targetId" : "LLVMDiff::@60f5eb80c0ce3eb4bd87",
+			"targetIndex" : 148,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "llvm/tools/llvm-diff/lib",
+		"source" : "llvm/tools/llvm-diff/lib"
+	}
+}

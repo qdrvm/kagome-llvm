@@ -1,0 +1,83 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install",
+			"add_llvm_library"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/tools/remarks-shlib/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 875,
+				"parent" : 1
+			},
+			{
+				"command" : 0,
+				"file" : 1,
+				"line" : 23,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 2,
+			"component" : "Remarks",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"llvm/lib/libRemarks.so.16"
+			],
+			"targetId" : "Remarks::@401c09f212daac70c405",
+			"targetIndex" : 345,
+			"targetInstallNamelink" : "skip",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Remarks",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"llvm/lib/libRemarks.so"
+			],
+			"targetId" : "Remarks::@401c09f212daac70c405",
+			"targetIndex" : 345,
+			"targetInstallNamelink" : "only",
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Remarks",
+			"destination" : "include/llvm-c",
+			"paths" : 
+			[
+				"llvm/include/llvm-c/Remarks.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "llvm/tools/remarks-shlib",
+		"source" : "llvm/tools/remarks-shlib"
+	}
+}

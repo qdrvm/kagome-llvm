@@ -1,0 +1,43 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_llvm_component_group"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/lib/Target/SystemZ/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 799,
+				"parent" : 1
+			}
+		]
+	},
+	"id" : "SystemZ::@c88ee814da546679d0ae",
+	"name" : "SystemZ",
+	"paths" : 
+	{
+		"build" : "llvm/lib/Target/SystemZ",
+		"source" : "llvm/lib/Target/SystemZ"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

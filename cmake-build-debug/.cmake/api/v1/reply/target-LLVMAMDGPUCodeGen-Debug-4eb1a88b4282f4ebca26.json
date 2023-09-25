@@ -1,0 +1,2052 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "llvm/lib/libLLVMAMDGPUCodeGen.a"
+		}
+	],
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"llvm_add_library",
+			"add_llvm_library",
+			"add_llvm_component_library",
+			"add_llvm_target",
+			"install",
+			"target_link_libraries",
+			"LLVMBuildResolveComponentsLink",
+			"add_dependencies",
+			"set_property",
+			"llvm_update_compile_flags",
+			"add_compile_definitions",
+			"include",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/lib/Target/AMDGPU/CMakeLists.txt",
+			"llvm/cmake/modules/LLVM-Build.cmake",
+			"llvm/lib/CMakeLists.txt",
+			"llvm/cmake/modules/HandleLLVMOptions.cmake",
+			"llvm/CMakeLists.txt",
+			"llvm/cmake/config-ix.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 43,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 1434,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 823,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 848,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 588,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 875,
+				"parent" : 3
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 7,
+				"file" : 3,
+				"line" : 67,
+				"parent" : 7
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 101,
+				"parent" : 8
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 719,
+				"parent" : 4
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 612,
+				"parent" : 4
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 81,
+				"parent" : 11
+			},
+			{
+				"file" : 5
+			},
+			{
+				"command" : 12,
+				"file" : 5,
+				"line" : 883,
+				"parent" : 13
+			},
+			{
+				"file" : 4,
+				"parent" : 14
+			},
+			{
+				"command" : 11,
+				"file" : 4,
+				"line" : 64,
+				"parent" : 15
+			},
+			{
+				"command" : 12,
+				"file" : 5,
+				"line" : 848,
+				"parent" : 13
+			},
+			{
+				"file" : 6,
+				"parent" : 17
+			},
+			{
+				"command" : 11,
+				"file" : 6,
+				"line" : 338,
+				"parent" : 18
+			},
+			{
+				"command" : 11,
+				"file" : 4,
+				"line" : 964,
+				"parent" : 15
+			},
+			{
+				"command" : 11,
+				"file" : 4,
+				"line" : 965,
+				"parent" : 15
+			},
+			{
+				"command" : 11,
+				"file" : 4,
+				"line" : 966,
+				"parent" : 15
+			},
+			{
+				"command" : 13,
+				"file" : 5,
+				"line" : 1110,
+				"parent" : 13
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " -fPIC -fno-semantic-interposition -fvisibility-inlines-hidden -Werror=date-time -Wall -Wextra -Wno-unused-parameter -Wwrite-strings -Wcast-qual -Wno-missing-field-initializers -pedantic -Wno-long-long -Wimplicit-fallthrough -Wno-maybe-uninitialized -Wno-class-memaccess -Wno-redundant-move -Wno-pessimizing-move -Wno-noexcept-type -Wdelete-non-virtual-dtor -Wsuggest-override -Wno-comment -Wno-misleading-indentation -Wctad-maybe-unsupported -fdiagnostics-color -g -std=c++17 -fvisibility=hidden -fdiagnostics-color=always"
+				},
+				{
+					"fragment" : " -fno-exceptions -fno-rtti"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 12,
+					"define" : "GTEST_HAS_RTTI=0"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "_DEBUG"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "__STDC_CONSTANT_MACROS"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "__STDC_FORMAT_MACROS"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "__STDC_LIMIT_MACROS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"path" : "/home/di/Projects/kagome-llvm/cmake-build-debug/llvm/lib/Target/AMDGPU"
+				},
+				{
+					"path" : "/home/di/Projects/kagome-llvm/llvm/lib/Target/AMDGPU"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "/home/di/Projects/kagome-llvm/cmake-build-debug/llvm/include"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "/home/di/Projects/kagome-llvm/llvm/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					5
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 9,
+			"id" : "LLVMDemangle::@f654d0fb50ef5061f310"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMSupport::@5053ed32de7fb2c48a7b"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "intrinsics_gen::@b7766729d3cf5f775476"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMCore::@42bf9b9a8ac35fa8f759"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMIRPrinter::@8fb0f767983f75b26761"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMIRReader::@2e6a93a69ae3cfac1e26"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMCodeGen::@5698c6d5e444b740ca1d"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMSelectionDAG::@c333955858bc6b935302"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMAsmPrinter::@4fd45100f6bbabf40bd6"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMMIRParser::@ad1fe6e33f57756dbf7e"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMGlobalISel::@d46ff96d4df4a0837c50"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMBinaryFormat::@f0b090d43f463b60b38d"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMBitReader::@b4f7e71301ef9e899c2e"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMBitWriter::@e9b8974b7ddd6f87f2dd"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMBitstreamReader::@9ab0ae86b33d81c60d50"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMFrontendOpenMP::@6c864845d7350c2d41c2"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMTransformUtils::@5700df002111da4820cc"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMInstrumentation::@bf327c2d923b6c9556f6"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMAggressiveInstCombine::@3f792b9b76dc81b75401"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMInstCombine::@7e53d04c92de703cf897"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMScalarOpts::@a83bebbb90c373d7014b"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMipo::@34f865ca7083e6d19969"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMVectorize::@52c1c8350f0b7207ab66"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMObjCARCOpts::@9f22755e2a5856e32fd4"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMCoroutines::@282c427d8daddc42f486"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMLinker::@a2c82741a70ab60d162a"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMAnalysis::@cebb62c0266d6c557b73"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMMC::@e66659f572379e11e74a"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMMCParser::@86e25233705f6329f0ac"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMObject::@cb3bf53bf36b1e9fc4cf"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMRemarks::@7dfd32376a3688f7fb04"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMDebugInfoDWARF::@0c7efda7aa48606ce792"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMDebugInfoMSF::@63c6b5f6f3fe17585d63"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMDebugInfoCodeView::@6a98bbb55cebdd1fbae6"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMDebugInfoPDB::@98757380421d95336b14"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMSymbolize::@652bb3f17982f467403e"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMTarget::@caa14e7790cf8c37a5d9"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "AMDGPUCommonTableGen::@51e43a3b201cd905f93c"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "InstCombineTableGen::@51e43a3b201cd905f93c"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMAMDGPUDesc::@65b276230c7be21b2428"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMAMDGPUInfo::@c2619cf375c10651c2b9"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMAMDGPUUtils::@d96f9f443be8153d7c17"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMAsmParser::@924c7fff42d13d193ee5"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMProfileData::@699d5398dd30a31170b6"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMPasses::@e62c80c67409afe3aa64"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMTargetParser::@1a25f4f54dda206fe7e2"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "LLVMTextAPI::@3765edc5215c390c1cad"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Libraries"
+	},
+	"id" : "LLVMAMDGPUCodeGen::@51e43a3b201cd905f93c",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 6,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "/usr/local"
+		}
+	},
+	"name" : "LLVMAMDGPUCodeGen",
+	"nameOnDisk" : "libLLVMAMDGPUCodeGen.a",
+	"paths" : 
+	{
+		"build" : "llvm/lib/Target/AMDGPU",
+		"source" : "llvm/lib/Target/AMDGPU"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119
+			]
+		},
+		{
+			"name" : "TableGen descriptions",
+			"sourceIndexes" : 
+			[
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUAliasAnalysis.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUAlwaysInlinePass.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUAnnotateKernelFeatures.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUAnnotateUniformValues.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUArgumentUsageInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUAsmPrinter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUAtomicOptimizer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUAttributor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUCallLowering.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUCodeGenPrepare.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUCombinerHelper.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUCtorDtorLowering.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUExportClustering.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUFrameLowering.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUGlobalISelUtils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUHSAMetadataStreamer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUInsertDelayAlu.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUInstCombineIntrinsic.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUInstrInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUInstructionSelector.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUISelDAGToDAG.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUISelLowering.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPULateCodeGenPrepare.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPULegalizerInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPULibCalls.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPULibFunc.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPULowerIntrinsics.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPULowerKernelArguments.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPULowerKernelAttributes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPULowerModuleLDSPass.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUMachineCFGStructurizer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUMachineFunction.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUMachineModuleInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUMacroFusion.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUMCInstLower.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUIGroupLP.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUMIRFormatter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUOpenCLEnqueuedBlockLowering.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUPerfHintAnalysis.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUPostLegalizerCombiner.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUPreLegalizerCombiner.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUPrintfRuntimeBinding.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUPromoteAlloca.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUPropagateAttributes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUPromoteKernelArguments.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPURegBankCombiner.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPURegisterBankInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUReleaseVGPRs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUReplaceLDSUseWithPointer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUResourceUsageAnalysis.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPURewriteOutArguments.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPURewriteUndefForPHI.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUSetWavePriority.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUSubtarget.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUTargetMachine.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUTargetObjectFile.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUTargetTransformInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUUnifyDivergentExitNodes.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUUnifyMetadata.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600MachineCFGStructurizer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/GCNCreateVOPD.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/GCNDPPCombine.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/GCNHazardRecognizer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/GCNILPSched.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/GCNIterativeScheduler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/GCNMinRegStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/GCNNSAReassign.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/GCNPreRAOptimizations.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/GCNRegPressure.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/GCNSchedStrategy.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/GCNVOPDUtils.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600AsmPrinter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600ClauseMergePass.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600ControlFlowFinalizer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600EmitClauseMarkers.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600ExpandSpecialInstrs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600FrameLowering.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600InstrInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600ISelDAGToDAG.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600ISelLowering.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600MachineFunctionInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600MachineScheduler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600MCInstLower.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600OpenCLImageTypeLoweringPass.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600OptimizeVectorRegisters.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600Packetizer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600RegisterInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600Subtarget.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600TargetMachine.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/R600TargetTransformInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIAnnotateControlFlow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIFixSGPRCopies.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIFixVGPRCopies.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIFoldOperands.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIFormMemoryClauses.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIFrameLowering.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIInsertHardClauses.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIInsertWaitcnts.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIInstrInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIISelLowering.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SILateBranchLowering.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SILoadStoreOptimizer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SILowerControlFlow.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SILowerI1Copies.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SILowerSGPRSpills.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIMachineFunctionInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIMachineScheduler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIMemoryLegalizer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIModeRegister.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIOptimizeExecMasking.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIOptimizeExecMaskingPreRA.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIOptimizeVGPRLiveRange.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIPeepholeSDWA.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIPostRABundler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIPreAllocateWWMRegs.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIPreEmitPeephole.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIProgramInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIRegisterInfo.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIShrinkInstructions.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"compileGroupIndex" : 0,
+			"path" : "llvm/lib/Target/AMDGPU/SIWholeQuadMode.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPU.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUCallingConv.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUCombine.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUFeatures.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUGISel.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUInstrInfo.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPURegisterBanks.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUSearchableTables.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/BUFInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/CaymanInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/DSInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/EXPInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/EvergreenInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/FLATInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/GCNProcessors.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/InstCombineTables.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/LDSDIRInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/MIMGInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600InstrFormats.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600InstrInfo.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600Instructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600Processors.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600RegisterInfo.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600Schedule.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R700Instructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/SIInstrFormats.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/SIInstrInfo.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/SIInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/SIRegisterInfo.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/SISchedule.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/SMInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/SOPInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/VIInstrFormats.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/VINTERPInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/VOP1Instructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/VOP2Instructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/VOP3Instructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/VOP3PInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/VOPCInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/VOPDInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/VOPInstructions.td",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPU.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUAliasAnalysis.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUArgumentUsageInfo.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUAsmPrinter.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUCallLowering.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUCombinerHelper.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUCtorDtorLowering.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUExportClustering.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUFrameLowering.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUGlobalISelUtils.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUHSAMetadataStreamer.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUIGroupLP.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUISelDAGToDAG.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUISelLowering.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUInstrInfo.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUInstructionSelector.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPULegalizerInfo.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPULibFunc.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUMCInstLower.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUMIRFormatter.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUMachineFunction.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUMachineModuleInfo.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUMacroFusion.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUPTNote.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUPerfHintAnalysis.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPURegisterBankInfo.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUResourceUsageAnalysis.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUSubtarget.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUTargetMachine.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUTargetObjectFile.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDGPUTargetTransformInfo.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/AMDKernelCodeT.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/GCNHazardRecognizer.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/GCNIterativeScheduler.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/GCNRegPressure.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/GCNSchedStrategy.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/GCNSubtarget.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/GCNVOPDUtils.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600AsmPrinter.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600Defines.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600FrameLowering.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600ISelLowering.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600InstrInfo.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600MachineFunctionInfo.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600MachineScheduler.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600RegisterInfo.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600Subtarget.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600TargetMachine.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/R600TargetTransformInfo.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/SIDefines.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/SIFrameLowering.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/SIISelLowering.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/SIInstrInfo.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/SIMachineFunctionInfo.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/SIMachineScheduler.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/SIProgramInfo.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 5,
+			"path" : "llvm/lib/Target/AMDGPU/SIRegisterInfo.h",
+			"sourceGroupIndex" : 2
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

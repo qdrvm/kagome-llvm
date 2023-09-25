@@ -1,0 +1,43 @@
+{
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target",
+			"add_llvm_component_group"
+		],
+		"files" : 
+		[
+			"llvm/cmake/modules/AddLLVM.cmake",
+			"llvm/lib/Target/MSP430/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 799,
+				"parent" : 1
+			}
+		]
+	},
+	"id" : "MSP430::@1309a8ea1bbd7adf76af",
+	"name" : "MSP430",
+	"paths" : 
+	{
+		"build" : "llvm/lib/Target/MSP430",
+		"source" : "llvm/lib/Target/MSP430"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}
