@@ -64,9 +64,14 @@ namespace llvm {
 template <typename DerivedT, typename IteratorCategoryT, typename T,
           typename DifferenceTypeT = std::ptrdiff_t, typename PointerT = T *,
           typename ReferenceT = T &>
-class iterator_facade_base
-    : public std::iterator<IteratorCategoryT, T, DifferenceTypeT, PointerT,
-                           ReferenceT> {
+class iterator_facade_base {
+public:
+  using iterator_category = IteratorCategoryT;
+  using value_type = T;
+  using difference_type = DifferenceTypeT;
+  using pointer = PointerT;
+  using reference = ReferenceT;
+
 protected:
   enum {
     IsRandomAccess = std::is_base_of<std::random_access_iterator_tag,
@@ -75,11 +80,6 @@ protected:
                                       IteratorCategoryT>::value,
   };
 
-  /// A proxy object for computing a reference via indirecting a copy of an
-  /// iterator. This is used in APIs which need to produce a reference via
-  /// indirection but for which the iterator object might be a temporary. The
-  /// proxy preserves the iterator internally and exposes the indirected
-  /// reference via a conversion operator.
   class ReferenceProxy {
     friend iterator_facade_base;
 
